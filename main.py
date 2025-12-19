@@ -25,7 +25,15 @@ context = EvaluationContext(targeting_key="user-123")
 
 # Fetch and print the string property
 full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
-value = client.get_string_value(full_key, "HI! How are you?", context)
+value = client.get_string_value(full_key, "Hi! How are you?", context)
 
 print(f"Flag value: {value}")
 
+# Second flag
+FLAG_KEY_2 = "fdema-py-2"
+PROPERTY_NAME_2 = "subtitle"
+
+full_key_2 = f"{FLAG_KEY_2}.{PROPERTY_NAME_2}"
+value_2 = client.get_string_value(full_key_2, "Default subtitle", context)
+
+print(f"Flag 2 value: {value_2}")

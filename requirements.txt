@@ -1,3 +1,0 @@
-spotify-confidence-sdk
-openfeature-sdk
-

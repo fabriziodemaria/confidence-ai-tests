@@ -2,12 +2,18 @@ from confidence.confidence import Confidence
 from confidence.openfeature_provider import ConfidenceOpenFeatureProvider
 from openfeature import api
 from openfeature.evaluation_context import EvaluationContext
+import os
 
-# Replace with your actual client secret
-CLIENT_SECRET = "in4jCyVWyrqezcY5lMqdPsl170s7w5FF"
+CLIENT_SECRET_ENV_VAR = "CONFIDENCE_CLIENT_SECRET"
+client_secret = os.getenv(CLIENT_SECRET_ENV_VAR)
+if not client_secret:
+    raise RuntimeError(
+        f"Missing required environment variable: {CLIENT_SECRET_ENV_VAR}. "
+        f"Set it to your Confidence client secret."
+    )
 
 # Initialize the Confidence SDK
-confidence = Confidence(client_secret=CLIENT_SECRET)
+confidence = Confidence(client_secret=client_secret)
 
 # Create and set the OpenFeature provider
 provider = ConfidenceOpenFeatureProvider(confidence)

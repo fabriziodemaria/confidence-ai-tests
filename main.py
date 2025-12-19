@@ -16,18 +16,12 @@ api.set_provider(provider)
 # Get the OpenFeature client
 client = api.get_client()
 
-# Replace with your actual flag key and property name
-FLAG_KEY = "fdema-py"
-PROPERTY_NAME = "text"
-
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-# Fetch and print the string property
-full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
-value = client.get_string_value(full_key, "Hi! How are you?", context)
-
-print(f"Flag value: {value}")
+# This flow previously relied on a flag; keep the prior default response.
+greeting_text = "Hi! How are you?"
+print(f"Greeting message: {greeting_text}")
 
 # Second flag
 FLAG_KEY_2 = "fdema-py-2"

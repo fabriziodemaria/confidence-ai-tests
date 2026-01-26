@@ -19,7 +19,7 @@ client = api.get_client()
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-# This flow previously relied on a flag; keep the prior default response.
+# Flag fdema-py has been removed, using default value
 greeting_text = "Hi! How are you?"
 print(f"Greeting message: {greeting_text}")
 

@@ -19,15 +19,11 @@ client = api.get_client()
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-# Flag fdema-py has been removed, using default value
-greeting_text = "Hi! How are you?"
-print(f"Greeting message: {greeting_text}")
+# Flag
+FLAG_KEY = "fdema-py-2"
+PROPERTY_NAME = "subtitle"
 
-# Second flag
-FLAG_KEY_2 = "fdema-py-2"
-PROPERTY_NAME_2 = "subtitle"
+full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
+value = client.get_string_value(full_key, "Default subtitle", context)
 
-full_key_2 = f"{FLAG_KEY_2}.{PROPERTY_NAME_2}"
-value_2 = client.get_string_value(full_key_2, "Default subtitle", context)
-
-print(f"Flag 2 value: {value_2}")
+print(f"Flag value: {value}")

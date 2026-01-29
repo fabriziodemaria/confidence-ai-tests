@@ -19,7 +19,7 @@ client = api.get_client()
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-# Flag
+# Flag for subtitle feature
 FLAG_KEY = "fdema-py-2"
 PROPERTY_NAME = "subtitle"
 

@@ -23,6 +23,7 @@ context = EvaluationContext(targeting_key="user-123")
 FLAG_KEY = "fdema-py-2"
 PROPERTY_NAME = "subtitle"
 
+# Fetch and print the string property
 full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
 value = client.get_string_value(full_key, "Default subtitle", context)
 

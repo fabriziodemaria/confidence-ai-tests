@@ -17,15 +17,15 @@ api.set_provider(provider)
 client = api.get_client()
 
 # Replace with your actual flag key and property name
-FLAG_KEY = "fdema-py"
-PROPERTY_NAME = "text"
+FLAG_KEY = "hide-campaigns-sidebar"
+PROPERTY_NAME = "enabled"
 
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
 # Fetch and print the string property
 full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
-value = client.get_string_value(full_key, "Hi! How are you?", context)
+value = client.get_boolean_value(full_key, false, context)
 
 print(f"Flag value: {value}")
 

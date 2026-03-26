@@ -16,20 +16,10 @@ api.set_provider(provider)
 # Get the OpenFeature client
 client = api.get_client()
 
-# Replace with your actual flag key and property name
-FLAG_KEY = "hide-campaigns-sidebar"
-PROPERTY_NAME = "enabled"
-
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-# Fetch and print the string property
-full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
-value = client.get_boolean_value(full_key, false, context)
-
-print(f"Flag value: {value}")
-
-# Second flag
+# Replace with your actual flag key and property name
 FLAG_KEY_2 = "fdema-py-2"
 PROPERTY_NAME_2 = "subtitle"
 

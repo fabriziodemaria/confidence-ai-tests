@@ -29,9 +29,8 @@ value = client.get_boolean_value(full_key, False, context)
 
 print(f"Flag value: {value}")
 
-# Stale flag removed; keep default behavior.
+# Removed stale Confidence flag; keep default subtitle behavior.
 value_2 = "Default subtitle"
-
 print(f"Flag 2 value: {value_2}")
 
 # E2E auto-created flags

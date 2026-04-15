@@ -41,7 +41,6 @@ print(f"Flag 2 value: {value_2}")
 # E2E auto-created flags
 e2e_flags = [
     "e2e-auto-created-flag-1769462017160",
-    "e2e-auto-created-flag-1769458310951",
 ]
 
 for flag_key in e2e_flags:

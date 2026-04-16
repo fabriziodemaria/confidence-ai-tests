@@ -29,10 +29,6 @@ value = client.get_boolean_value(full_key, False, context)
 
 print(f"Flag value: {value}")
 
-value_2 = "Default subtitle"
-
-print(f"Flag 2 value: {value_2}")
-
 # E2E auto-created flags
 e2e_flags = [
     "e2e-auto-created-flag-1769462017160",

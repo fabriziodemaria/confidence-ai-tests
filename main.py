@@ -17,7 +17,7 @@ api.set_provider(provider)
 client = api.get_client()
 
 # Replace with your actual flag key and property name
-FLAG_KEY = "hide-campaigns-sidebar"
+FLAG_KEY = "test-fdema"
 PROPERTY_NAME = "enabled"
 
 # Create evaluation context with a targeting key

@@ -28,23 +28,3 @@ full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
 value = client.get_boolean_value(full_key, False, context)
 
 print(f"Flag value: {value}")
-
-# Second flag
-FLAG_KEY_2 = "fdema-py"
-PROPERTY_NAME_2 = "subtitle"
-
-full_key_2 = f"{FLAG_KEY_2}.{PROPERTY_NAME_2}"
-value_2 = client.get_string_value(full_key_2, "Default subtitle", context)
-
-print(f"Flag 2 value: {value_2}")
-
-# E2E auto-created flags
-e2e_flags = [
-    "e2e-auto-created-flag-1769462017160",
-    "e2e-auto-created-flag-1769458310951",
-]
-
-for flag_key in e2e_flags:
-    full_key = f"{flag_key}.enabled"
-    value = client.get_boolean_value(full_key, False, context)
-    print(f"{flag_key}: {value}")

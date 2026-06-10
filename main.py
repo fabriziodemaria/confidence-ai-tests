@@ -19,9 +19,6 @@ client = api.get_client()
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-value = False
-print(f"Flag value: {value}")
-
 # Second flag
 FLAG_KEY_2 = "fdema-py"
 PROPERTY_NAME_2 = "subtitle"

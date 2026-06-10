@@ -16,17 +16,10 @@ api.set_provider(provider)
 # Get the OpenFeature client
 client = api.get_client()
 
-# Replace with your actual flag key and property name
-FLAG_KEY = "test-fdema"
-PROPERTY_NAME = "enabled"
-
 # Create evaluation context with a targeting key
 context = EvaluationContext(targeting_key="user-123")
 
-# Fetch and print the string property
-full_key = f"{FLAG_KEY}.{PROPERTY_NAME}"
-value = client.get_boolean_value(full_key, False, context)
-
+value = False
 print(f"Flag value: {value}")
 
 # Second flag

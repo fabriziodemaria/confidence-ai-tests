@@ -29,12 +29,7 @@ value = client.get_boolean_value(full_key, False, context)
 
 print(f"Flag value: {value}")
 
-# Second flag
-FLAG_KEY_2 = "mansa-test-flag"
-PROPERTY_NAME_2 = "subtitle"
-
-full_key_2 = f"{FLAG_KEY_2}.{PROPERTY_NAME_2}"
-value_2 = client.get_string_value(full_key_2, "Default subtitle", context)
+value_2 = "Default subtitle"
 
 print(f"Flag 2 value: {value_2}")
 

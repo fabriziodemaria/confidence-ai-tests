@@ -38,6 +38,15 @@ value_2 = client.get_string_value(full_key_2, "Default subtitle", context)
 
 print(f"Flag 2 value: {value_2}")
 
+# Third flag
+FLAG_KEY_3 = "test-starts-with"
+PROPERTY_NAME_3 = "enabled"
+
+full_key_3 = f"{FLAG_KEY_3}.{PROPERTY_NAME_3}"
+value_3 = client.get_boolean_value(full_key_3, False, context)
+
+print(f"Flag 3 value: {value_3}")
+
 # E2E auto-created flags
 e2e_flags = [
     "e2e-auto-created-flag-1769462017160",

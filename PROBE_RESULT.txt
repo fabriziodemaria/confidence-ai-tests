@@ -1,0 +1,21 @@
+=== date ===
+Tue Jul 21 14:34:44 UTC 2026
+=== proxy env ===
+(no proxy vars)
+=== git remote ===
+github	https://github.com/fabriziodemaria/confidence-ai-tests.git (fetch)
+github	https://github.com/fabriziodemaria/confidence-ai-tests.git (push)
+origin	https://github.com/fabriziodemaria/confidence-ai-tests.git (fetch)
+origin	https://github.com/fabriziodemaria/confidence-ai-tests.git (push)
+=== REST /repos/fabriziodemaria/confidence-ai-tests ===
+{"message":"API rate limit exceeded for 34.29.237.63. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+HTTP=403
+=== REST /user ===
+{"message":"API rate limit exceeded for 34.29.237.63. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+HTTP=403
+=== GraphQL viewer ===
+{"message":"API rate limit exceeded for 34.29.237.63. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+HTTP=403

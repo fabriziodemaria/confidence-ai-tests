@@ -1,1 +1,1 @@
-# Let's party! 🎉
+# Let's party! 🪩

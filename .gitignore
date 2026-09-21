@@ -1,2 +1,19 @@
 __pycache__/
 *.py[cod]
+
+# --- Xcode (user-specific & generated files only) ---
+# Keep required project files tracked: project.pbxproj, *.xcworkspace,
+# and shared schemes under xcshareddata/. Ignore only generated/user state.
+.DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+

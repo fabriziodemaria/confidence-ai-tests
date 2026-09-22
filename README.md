@@ -1,4 +1,4 @@
-# confidence-ai-tests
+# confidence-ai-tests 🚀
 
 A minimal Python example that evaluates feature flags with the
 [Spotify Confidence](https://confidence.spotify.com/) SDK through the
